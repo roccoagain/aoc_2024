@@ -46,14 +46,12 @@ pub fn day2() {
         }
 
         // part 2: try removing each level one at a time
-        let mut found_safe = false;
         for i in 0..numbers.len() {
             let mut modified_numbers = numbers.clone();
             modified_numbers.remove(i);
 
             if is_safe(&modified_numbers) {
                 safe_reports_part2 += 1;
-                found_safe = true;
                 break; // no need to check further if we've found a safe sequence
             }
         }
