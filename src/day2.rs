@@ -60,5 +60,8 @@ pub fn day2() {
     }
 
     println!("safe reports (part 1): {}", safe_reports_part1);
+    assert!(safe_reports_part1 == 421);
+
     println!("safe reports (part 2): {}", safe_reports_part2);
+    assert!(safe_reports_part2 == 476);
 }
